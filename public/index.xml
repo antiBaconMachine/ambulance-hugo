@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>http://example.org/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 Apr 2016 08:16:20 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>NVM Upgrade to latest node</title>
+      <link>http://example.org/post/nvm-upgrade-to-latest-node/</link>
+      <pubDate>Thu, 07 Apr 2016 08:16:20 +0000</pubDate>
+      
+      <guid>http://example.org/post/nvm-upgrade-to-latest-node/</guid>
+      <description>Node moves fast. Like most people I manage the frequent updates with NVM. A feature I wish existed in NVM is a one liner to updgrade to the latest available node and set this as the system default.
+Fortunately this is not too hard to script, here&amp;rsquo;s my attempt:
+#! /usr/bin/env bash source $NVM_DIR/nvm.sh CURRENT=`nvm current` LATEST=`nvm ls-remote | tail -n 1 | grep -o &amp;quot;v[0-9\.]*&amp;quot;` echo &amp;quot;current ($CURRENT), latest ($LATEST)&amp;quot; nvm install $LATEST --reinstall-packages-from=$CURRENT nvm alias default $LATEST  Reasonably self explanatory but a couple of points are worth noting:</description>
+    </item>
+    
+    <item>
+      <title>Retrieving asset snapshots from Nexus with Gradle</title>
+      <link>http://example.org/post/retrieving-maven-snapshots-from-nexus-with-gradle/</link>
+      <pubDate>Thu, 10 Sep 2015 14:36:33 +0000</pubDate>
+      
+      <guid>http://example.org/post/retrieving-maven-snapshots-from-nexus-with-gradle/</guid>
+      <description>I&amp;rsquo;ve recently been building a Tizen wearable widget to be packaged with one of our Android apps. This is achieved by bundling the built widget in the assets dir of the APK.
+The simplest way to develop in this way is to symlink the widget to the right place. Once this goes out for testing though you&amp;rsquo;re either going to have to move the binary to source control and commit to keeping it up to date, or have your dependency manager handle this for you.</description>
+    </item>
+    
+    <item>
+      <title>In search of the perfect dev process</title>
+      <link>http://example.org/post/in-search-of-the-perfect-dev-process/</link>
+      <pubDate>Fri, 26 Jun 2015 14:58:16 +0000</pubDate>
+      
+      <guid>http://example.org/post/in-search-of-the-perfect-dev-process/</guid>
+      <description>Professional development is a very different game to the late night hack sessions where we first learn the ropes. The first couple of years of my career were really more about learning how to communicate about code than learning to code. I&amp;rsquo;ve been involved in a lot of different processes, some very ad hoc, some with buzzword names and a rulebook. All of them have taught me something, but above all what I now know is that there is no perfect process.</description>
+    </item>
+    
+    <item>
+      <title>Running Grunt tasks from Cordova hooks</title>
+      <link>http://example.org/post/running-grunt-tasks-from-cordova-hooks/</link>
+      <pubDate>Tue, 12 May 2015 10:12:40 +0000</pubDate>
+      
+      <guid>http://example.org/post/running-grunt-tasks-from-cordova-hooks/</guid>
+      <description>Cordova hooks are an invaluable tool for customising your build process. The canonical way to write them according to the Cordova documentation is to write them as node scripts for optimum cross platform compatibility. This is sound advice but for more complex projects we sometimes require a more structured tool. The obvious choices in the node space are Grunt and Gulp. In this post I&amp;rsquo;ll explain how I recently adapted an existing Grunt build to be triggered using Cordova hooks.</description>
+    </item>
+    
+    <item>
+      <title>Contenteditable double word autocorrect bug in iOS webviews</title>
+      <link>http://example.org/post/contenteditable-double-word-autocorrect-bug-in-ios-webviews/</link>
+      <pubDate>Wed, 29 Apr 2015 10:42:35 +0000</pubDate>
+      
+      <guid>http://example.org/post/contenteditable-double-word-autocorrect-bug-in-ios-webviews/</guid>
+      <description>Came accross a very frustrating bug this week, it looks like this:
+ Within an ios webview start typing in a content editable div. Make an obvious typo so that autocorrect makes a suggestion
+ Tab a button or link somehwere else on the page.
+ Autocorrect will insert two copies of the suggested word.
+  I&amp;rsquo;ve not seen this detailed anywhere else so I have provided a concrete example cordova app.</description>
+    </item>
+    
+    <item>
+      <title>Objective C to Swift case sensitivity gotcha with external parameter names</title>
+      <link>http://example.org/post/objective-c-to-swift-case-sensitivity-gotcha-with-external-parameter-names/</link>
+      <pubDate>Wed, 25 Feb 2015 19:38:10 +0000</pubDate>
+      
+      <guid>http://example.org/post/objective-c-to-swift-case-sensitivity-gotcha-with-external-parameter-names/</guid>
+      <description>I hit a slight edge case on a project interopping between Objective C and Swift the other day. The app itself is all Objective C with the test suite in Swift. In this case I was implementing an Objective C delegate protocol in Swift as a test.
+I&amp;rsquo;ve distilled the issue down into a simple demo project, so I&amp;rsquo;ll be using code from that to describe the problem. We start with an Objective C protocol:</description>
+    </item>
+    
+    <item>
+      <title>iOS Code Signing: A Tragicomedy In n Parts</title>
+      <link>http://example.org/post/ios-code-signing-a-tragicomedy-in-3-parts/</link>
+      <pubDate>Wed, 21 Jan 2015 13:28:24 +0000</pubDate>
+      
+      <guid>http://example.org/post/ios-code-signing-a-tragicomedy-in-3-parts/</guid>
+      <description>There&amp;rsquo;s more than enough code signing invective washing around the internet already, so instead of moaning about all the ways the process is confusing, I&amp;rsquo;ll start with a compliment: for new solo developers, xcode typically just works for signing, I think Apple have done a decent job. Unfortunately if you need to run a CI job for your app or otherwise sign from the command line or use multiple certificates and profiles, things get tricky.</description>
+    </item>
+    
+    <item>
+      <title>Roll your own JavaScript framework</title>
+      <link>http://example.org/post/roll-your-own-javascript-framework/</link>
+      <pubDate>Tue, 30 Dec 2014 12:46:44 +0000</pubDate>
+      
+      <guid>http://example.org/post/roll-your-own-javascript-framework/</guid>
+      <description>In this article I intent to talk, at high level, about some of the decisions we need to make when laying a out a green field JavaScript app. I&amp;rsquo;ll address four key problems which most medium to large apps need to address:
+ How the code is organised and loaded How isolated units of code communicate How the app presents How the presentation is structured  I&amp;rsquo;ll discuss why I believe selecting small well designed components to address each issue individually is preferable to a large monolithic framework.</description>
+    </item>
+    
+    <item>
+      <title>Unit testing iOS code with Swift and manual stubs</title>
+      <link>http://example.org/post/unit-testing-ios-code-with-swift-and-manual-mocks/</link>
+      <pubDate>Tue, 23 Dec 2014 12:44:42 +0000</pubDate>
+      
+      <guid>http://example.org/post/unit-testing-ios-code-with-swift-and-manual-mocks/</guid>
+      <description>In general I find unit testing on the iOS platform to be a pain. Xcode&amp;rsquo;s built in test library, XCTest, is very basic and whilst I&amp;rsquo;m reasonably inexperienced with iOS development, it does seem the community as a whole doesn&amp;rsquo;t really rate unit testing. Automated front end integration testing seems to have a much higher mind share.
+Now I&amp;rsquo;m not against this approach at all. As with any front end tech, there are limits to what isolated unit testing can achieve.</description>
+    </item>
+    
+    <item>
+      <title>Why u no offline meteor?</title>
+      <link>http://example.org/post/why-u-no-offline-meteor/</link>
+      <pubDate>Sun, 16 Nov 2014 17:30:04 +0000</pubDate>
+      
+      <guid>http://example.org/post/why-u-no-offline-meteor/</guid>
+      <description>Meteor 1.0 dropped a couple weeks ago which prompted me to revisit it. I&amp;rsquo;d previously dabbled with creating a race picker for the board game Twilight Imperium so we could spend less time faffing when it came to game day. Whilst I found it to to be an enjoyable experience, like most people I had concerns around code re-usability. I also felt for that particular app I didn’t really need the coolest feature of meteor, realtime by default.</description>
+    </item>
+    
+    <item>
+      <title>Reflections on a shotgun wedding</title>
+      <link>http://example.org/post/reflections-on-a-shotgun-wedding/</link>
+      <pubDate>Wed, 15 Oct 2014 10:07:55 +0000</pubDate>
+      
+      <guid>http://example.org/post/reflections-on-a-shotgun-wedding/</guid>
+      <description>I am a &amp;ldquo;web guy&amp;rdquo;. I tend to refer to myself as a &amp;ldquo;Web developer&amp;rdquo;, not a programmer, or a software engineer. I like making web apps.
+Over the last year this has extended to making cordova apps for touch devices. This has entailed dabbling in some native code for plugin wiring, but essentially I&amp;rsquo;m still a web guy at heart. Javascript is my bread and butter, and I&amp;rsquo;m just fine with that.</description>
+    </item>
+    
+    <item>
+      <title>Setting publicPath for webpack-dev-server in API mode</title>
+      <link>http://example.org/post/setting-publicpath-for-webpack-dev-server-in-api-mode/</link>
+      <pubDate>Thu, 24 Jul 2014 09:56:27 +0000</pubDate>
+      
+      <guid>http://example.org/post/setting-publicpath-for-webpack-dev-server-in-api-mode/</guid>
+      <description>Recently I had an issue whereby running webpack-dev-server --content-base www from the command line was working great, but as soon as I tried to automate it as a gulp task my bundle seemed to never reload properly.
+new WebpackDevServer(webpack(webpackConfig), { contentBase: &amp;quot;www&amp;quot; }).listen(8080, &#39;localhost&#39;, noop);  Functionally I had assumed that this would be equivalent to the previous command line version. I could see the server was correctly detecting changes and reloading the page but the content never changed.</description>
+    </item>
+    
+    <item>
+      <title>Debugging Cordova Android apps in IntelliJ 13</title>
+      <link>http://example.org/post/debugging-cordova-android-apps-in-intellij-13/</link>
+      <pubDate>Fri, 11 Jul 2014 08:53:03 +0000</pubDate>
+      
+      <guid>http://example.org/post/debugging-cordova-android-apps-in-intellij-13/</guid>
+      <description>Debugging an Android app in IntelliJ is fairly straightforward. It&amp;rsquo;s slightly harder to figure out how to spin up a cordova app.
+First things first we need to define an android module. The only way I&amp;rsquo;ve got this to work is by importing a module rather than creating a new one. Open the project structure and go to modules screen. right click your project and select add &amp;gt; import module. In theory the wizard should allow you to set up everything you need.</description>
+    </item>
+    
+    <item>
+      <title>Exploring Metalsmith</title>
+      <link>http://example.org/post/implementing-a-metalsmith-plugin/</link>
+      <pubDate>Fri, 06 Jun 2014 15:11:36 +0000</pubDate>
+      
+      <guid>http://example.org/post/implementing-a-metalsmith-plugin/</guid>
+      <description>Update - 10th June 14: I&amp;rsquo;ve extracted the JSON parsing features from the following code into a metalsmith plugin, metalsmith-json, whcih is now available on github and npm
+A few weeks ago, I read about Metalsmith, a neat looking static site generator. More recently I was looking at ways of improving an internal static site we maintain as a gateway to download and install mobile artifacts. It seemed like a good opportunity to play with Metalsmith and I&amp;rsquo;d like to talk through my experience.</description>
+    </item>
+    
+    <item>
+      <title>Inlining grunt tasks</title>
+      <link>http://example.org/post/inlining-grunt-tasks/</link>
+      <pubDate>Tue, 27 May 2014 15:57:51 +0000</pubDate>
+      
+      <guid>http://example.org/post/inlining-grunt-tasks/</guid>
+      <description>Grunt config files can easily become very verbose and disparate with related tasks scattered far apart. Without careful organisation and maintenance they can become quite unwieldy. In this post I&amp;rsquo;ll discuss some of the ways I&amp;rsquo;ve been experimenting with to make gruntfiles terser and keep related components together. I&amp;rsquo;ll introduce the grunt-inline-task-sugar plugin which I created to implement some of the ideas discussed.
+Anatomy of the alias task The grunt &amp;lsquo;alias&amp;rsquo; task type is probably familiar to you:</description>
+    </item>
+    
+    <item>
+      <title>Adding a directed task graph to grunt</title>
+      <link>http://example.org/post/adding-a-task-graph-to-grunt/</link>
+      <pubDate>Thu, 22 May 2014 12:14:04 +0000</pubDate>
+      
+      <guid>http://example.org/post/adding-a-task-graph-to-grunt/</guid>
+      <description>Last year we migrated our build system for a multi platform cordova app to Grunt from ant. It was great. Well, actually it was just quite good. See, whilst I&amp;rsquo;m really not a fan of ant, the ant task graph is nice. It upsets me that I can&amp;rsquo;t express branching task dependencies in Grunt.
+####The problem
+In this case we wanted to do a bunch of common setup once then do n platform specific steps for n platforms.</description>
+    </item>
+    
+  </channel>
+</rss>

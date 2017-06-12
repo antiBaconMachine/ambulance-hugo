@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on My New Hugo Site</title>
+    <link>http://example.org/tags/</link>
+    <description>Recent content in Tags on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Jul 2014 08:53:03 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Android</title>
+      <link>http://example.org/tags/android/</link>
+      <pubDate>Fri, 11 Jul 2014 08:53:03 +0000</pubDate>
+      
+      <guid>http://example.org/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cordova</title>
+      <link>http://example.org/tags/cordova/</link>
+      <pubDate>Fri, 11 Jul 2014 08:53:03 +0000</pubDate>
+      
+      <guid>http://example.org/tags/cordova/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dev</title>
+      <link>http://example.org/tags/dev/</link>
+      <pubDate>Wed, 15 Oct 2014 10:07:55 +0000</pubDate>
+      
+      <guid>http://example.org/tags/dev/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grunt</title>
+      <link>http://example.org/tags/grunt/</link>
+      <pubDate>Tue, 27 May 2014 15:57:51 +0000</pubDate>
+      
+      <guid>http://example.org/tags/grunt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Intellij</title>
+      <link>http://example.org/tags/intellij/</link>
+      <pubDate>Fri, 11 Jul 2014 08:53:03 +0000</pubDate>
+      
+      <guid>http://example.org/tags/intellij/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ios</title>
+      <link>http://example.org/tags/ios/</link>
+      <pubDate>Wed, 15 Oct 2014 10:07:55 +0000</pubDate>
+      
+      <guid>http://example.org/tags/ios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>http://example.org/tags/java/</link>
+      <pubDate>Tue, 27 May 2014 15:57:51 +0000</pubDate>
+      
+      <guid>http://example.org/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Javascript</title>
+      <link>http://example.org/tags/javascript/</link>
+      <pubDate>Fri, 06 Jun 2014 15:11:36 +0000</pubDate>
+      
+      <guid>http://example.org/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Metalsmith</title>
+      <link>http://example.org/tags/metalsmith/</link>
+      <pubDate>Fri, 06 Jun 2014 15:11:36 +0000</pubDate>
+      
+      <guid>http://example.org/tags/metalsmith/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

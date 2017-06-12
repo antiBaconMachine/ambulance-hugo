@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ios on My New Hugo Site</title>
+    <link>http://example.org/tags/ios/</link>
+    <description>Recent content in Ios on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Oct 2014 10:07:55 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Reflections on a shotgun wedding</title>
+      <link>http://example.org/post/reflections-on-a-shotgun-wedding/</link>
+      <pubDate>Wed, 15 Oct 2014 10:07:55 +0000</pubDate>
+      
+      <guid>http://example.org/post/reflections-on-a-shotgun-wedding/</guid>
+      <description>I am a &amp;ldquo;web guy&amp;rdquo;. I tend to refer to myself as a &amp;ldquo;Web developer&amp;rdquo;, not a programmer, or a software engineer. I like making web apps.
+Over the last year this has extended to making cordova apps for touch devices. This has entailed dabbling in some native code for plugin wiring, but essentially I&amp;rsquo;m still a web guy at heart. Javascript is my bread and butter, and I&amp;rsquo;m just fine with that.</description>
+    </item>
+    
+  </channel>
+</rss>

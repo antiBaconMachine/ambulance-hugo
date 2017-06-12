@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cordova on My New Hugo Site</title>
+    <link>http://example.org/tags/cordova/</link>
+    <description>Recent content in Cordova on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Jul 2014 08:53:03 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/cordova/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Debugging Cordova Android apps in IntelliJ 13</title>
+      <link>http://example.org/post/debugging-cordova-android-apps-in-intellij-13/</link>
+      <pubDate>Fri, 11 Jul 2014 08:53:03 +0000</pubDate>
+      
+      <guid>http://example.org/post/debugging-cordova-android-apps-in-intellij-13/</guid>
+      <description>Debugging an Android app in IntelliJ is fairly straightforward. It&amp;rsquo;s slightly harder to figure out how to spin up a cordova app.
+First things first we need to define an android module. The only way I&amp;rsquo;ve got this to work is by importing a module rather than creating a new one. Open the project structure and go to modules screen. right click your project and select add &amp;gt; import module. In theory the wizard should allow you to set up everything you need.</description>
+    </item>
+    
+  </channel>
+</rss>
