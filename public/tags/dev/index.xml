@@ -1,52 +1,53 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dev on My New Hugo Site</title>
-    <link>http://example.org/tags/dev/</link>
-    <description>Recent content in Dev on My New Hugo Site</description>
+    <title>Dev on This is not an ambulance</title>
+    <link>https://antibaconmachine.github.io/tags/dev/</link>
+    <description>Recent content in Dev on This is not an ambulance</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <managingEditor>oliver.s.edwards@gmail.com (Ollie Edwards)</managingEditor>
+    <webMaster>oliver.s.edwards@gmail.com (Ollie Edwards)</webMaster>
     <lastBuildDate>Wed, 15 Oct 2014 10:07:55 +0000</lastBuildDate>
     
-	<atom:link href="http://example.org/tags/dev/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://antibaconmachine.github.io/tags/dev/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Reflections on a shotgun wedding</title>
-      <link>http://example.org/post/reflections-on-a-shotgun-wedding/</link>
+      <link>https://antibaconmachine.github.io/post/reflections-on-a-shotgun-wedding/</link>
       <pubDate>Wed, 15 Oct 2014 10:07:55 +0000</pubDate>
-      
-      <guid>http://example.org/post/reflections-on-a-shotgun-wedding/</guid>
+      <author>oliver.s.edwards@gmail.com (Ollie Edwards)</author>
+      <guid>https://antibaconmachine.github.io/post/reflections-on-a-shotgun-wedding/</guid>
       <description>I am a &amp;ldquo;web guy&amp;rdquo;. I tend to refer to myself as a &amp;ldquo;Web developer&amp;rdquo;, not a programmer, or a software engineer. I like making web apps.
 Over the last year this has extended to making cordova apps for touch devices. This has entailed dabbling in some native code for plugin wiring, but essentially I&amp;rsquo;m still a web guy at heart. Javascript is my bread and butter, and I&amp;rsquo;m just fine with that.</description>
     </item>
     
     <item>
       <title>Exploring Metalsmith</title>
-      <link>http://example.org/post/implementing-a-metalsmith-plugin/</link>
+      <link>https://antibaconmachine.github.io/post/implementing-a-metalsmith-plugin/</link>
       <pubDate>Fri, 06 Jun 2014 15:11:36 +0000</pubDate>
-      
-      <guid>http://example.org/post/implementing-a-metalsmith-plugin/</guid>
+      <author>oliver.s.edwards@gmail.com (Ollie Edwards)</author>
+      <guid>https://antibaconmachine.github.io/post/implementing-a-metalsmith-plugin/</guid>
       <description>Update - 10th June 14: I&amp;rsquo;ve extracted the JSON parsing features from the following code into a metalsmith plugin, metalsmith-json, whcih is now available on github and npm
 A few weeks ago, I read about Metalsmith, a neat looking static site generator. More recently I was looking at ways of improving an internal static site we maintain as a gateway to download and install mobile artifacts. It seemed like a good opportunity to play with Metalsmith and I&amp;rsquo;d like to talk through my experience.</description>
     </item>
     
     <item>
       <title>Inlining grunt tasks</title>
-      <link>http://example.org/post/inlining-grunt-tasks/</link>
+      <link>https://antibaconmachine.github.io/post/inlining-grunt-tasks/</link>
       <pubDate>Tue, 27 May 2014 15:57:51 +0000</pubDate>
-      
-      <guid>http://example.org/post/inlining-grunt-tasks/</guid>
+      <author>oliver.s.edwards@gmail.com (Ollie Edwards)</author>
+      <guid>https://antibaconmachine.github.io/post/inlining-grunt-tasks/</guid>
       <description>Grunt config files can easily become very verbose and disparate with related tasks scattered far apart. Without careful organisation and maintenance they can become quite unwieldy. In this post I&amp;rsquo;ll discuss some of the ways I&amp;rsquo;ve been experimenting with to make gruntfiles terser and keep related components together. I&amp;rsquo;ll introduce the grunt-inline-task-sugar plugin which I created to implement some of the ideas discussed.
 Anatomy of the alias task The grunt &amp;lsquo;alias&amp;rsquo; task type is probably familiar to you:</description>
     </item>
     
     <item>
       <title>Adding a directed task graph to grunt</title>
-      <link>http://example.org/post/adding-a-task-graph-to-grunt/</link>
+      <link>https://antibaconmachine.github.io/post/adding-a-task-graph-to-grunt/</link>
       <pubDate>Thu, 22 May 2014 12:14:04 +0000</pubDate>
-      
-      <guid>http://example.org/post/adding-a-task-graph-to-grunt/</guid>
+      <author>oliver.s.edwards@gmail.com (Ollie Edwards)</author>
+      <guid>https://antibaconmachine.github.io/post/adding-a-task-graph-to-grunt/</guid>
       <description>Last year we migrated our build system for a multi platform cordova app to Grunt from ant. It was great. Well, actually it was just quite good. See, whilst I&amp;rsquo;m really not a fan of ant, the ant task graph is nice. It upsets me that I can&amp;rsquo;t express branching task dependencies in Grunt.
 ####The problem
 In this case we wanted to do a bunch of common setup once then do n platform specific steps for n platforms.</description>

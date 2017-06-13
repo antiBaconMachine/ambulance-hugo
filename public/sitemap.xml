@@ -3,214 +3,214 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/post/nvm-upgrade-to-latest-node/</loc>
+    <loc>https://antibaconmachine.github.io/post/nvm-upgrade-to-latest-node/</loc>
     <lastmod>2016-04-07T08:16:20+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/post/retrieving-maven-snapshots-from-nexus-with-gradle/</loc>
+    <loc>https://antibaconmachine.github.io/post/retrieving-maven-snapshots-from-nexus-with-gradle/</loc>
     <lastmod>2015-09-10T14:36:33+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/post/in-search-of-the-perfect-dev-process/</loc>
+    <loc>https://antibaconmachine.github.io/post/in-search-of-the-perfect-dev-process/</loc>
     <lastmod>2015-06-26T14:58:16+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/post/running-grunt-tasks-from-cordova-hooks/</loc>
+    <loc>https://antibaconmachine.github.io/post/running-grunt-tasks-from-cordova-hooks/</loc>
     <lastmod>2015-05-12T10:12:40+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/post/contenteditable-double-word-autocorrect-bug-in-ios-webviews/</loc>
+    <loc>https://antibaconmachine.github.io/post/contenteditable-double-word-autocorrect-bug-in-ios-webviews/</loc>
     <lastmod>2015-04-29T10:42:35+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/post/objective-c-to-swift-case-sensitivity-gotcha-with-external-parameter-names/</loc>
+    <loc>https://antibaconmachine.github.io/post/objective-c-to-swift-case-sensitivity-gotcha-with-external-parameter-names/</loc>
     <lastmod>2015-02-25T19:38:10+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/post/ios-code-signing-a-tragicomedy-in-3-parts/</loc>
+    <loc>https://antibaconmachine.github.io/post/ios-code-signing-a-tragicomedy-in-3-parts/</loc>
     <lastmod>2015-01-21T13:28:24+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/post/roll-your-own-javascript-framework/</loc>
+    <loc>https://antibaconmachine.github.io/post/roll-your-own-javascript-framework/</loc>
     <lastmod>2014-12-30T12:46:44+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/post/unit-testing-ios-code-with-swift-and-manual-mocks/</loc>
+    <loc>https://antibaconmachine.github.io/post/unit-testing-ios-code-with-swift-and-manual-mocks/</loc>
     <lastmod>2014-12-23T12:44:42+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/post/why-u-no-offline-meteor/</loc>
+    <loc>https://antibaconmachine.github.io/post/why-u-no-offline-meteor/</loc>
     <lastmod>2014-11-16T17:30:04+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/post/reflections-on-a-shotgun-wedding/</loc>
+    <loc>https://antibaconmachine.github.io/post/reflections-on-a-shotgun-wedding/</loc>
     <lastmod>2014-10-15T10:07:55+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/post/setting-publicpath-for-webpack-dev-server-in-api-mode/</loc>
+    <loc>https://antibaconmachine.github.io/post/setting-publicpath-for-webpack-dev-server-in-api-mode/</loc>
     <lastmod>2014-07-24T09:56:27+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/post/debugging-cordova-android-apps-in-intellij-13/</loc>
+    <loc>https://antibaconmachine.github.io/post/debugging-cordova-android-apps-in-intellij-13/</loc>
     <lastmod>2014-07-11T08:53:03+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/post/implementing-a-metalsmith-plugin/</loc>
+    <loc>https://antibaconmachine.github.io/post/implementing-a-metalsmith-plugin/</loc>
     <lastmod>2014-06-06T15:11:36+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/post/inlining-grunt-tasks/</loc>
+    <loc>https://antibaconmachine.github.io/post/inlining-grunt-tasks/</loc>
     <lastmod>2014-05-27T15:57:51+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/post/adding-a-task-graph-to-grunt/</loc>
+    <loc>https://antibaconmachine.github.io/post/adding-a-task-graph-to-grunt/</loc>
     <lastmod>2014-05-22T12:14:04+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/android/</loc>
+    <loc>https://antibaconmachine.github.io/tags/android/</loc>
     <lastmod>2014-07-11T08:53:03+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/categories/android/</loc>
+    <loc>https://antibaconmachine.github.io/categories/android/</loc>
     <lastmod>2014-07-11T08:53:03+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://antibaconmachine.github.io/categories/</loc>
     <lastmod>2014-07-11T08:53:03+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/cordova/</loc>
+    <loc>https://antibaconmachine.github.io/tags/cordova/</loc>
     <lastmod>2014-07-11T08:53:03+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/categories/cordova/</loc>
+    <loc>https://antibaconmachine.github.io/categories/cordova/</loc>
     <lastmod>2014-07-11T08:53:03+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/dev/</loc>
+    <loc>https://antibaconmachine.github.io/tags/dev/</loc>
     <lastmod>2014-10-15T10:07:55+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/categories/dev/</loc>
+    <loc>https://antibaconmachine.github.io/categories/dev/</loc>
     <lastmod>2014-10-15T10:07:55+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/grunt/</loc>
+    <loc>https://antibaconmachine.github.io/tags/grunt/</loc>
     <lastmod>2014-05-27T15:57:51+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/categories/grunt/</loc>
+    <loc>https://antibaconmachine.github.io/categories/grunt/</loc>
     <lastmod>2014-05-27T15:57:51+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/intellij/</loc>
+    <loc>https://antibaconmachine.github.io/tags/intellij/</loc>
     <lastmod>2014-07-11T08:53:03+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/categories/intellij/</loc>
+    <loc>https://antibaconmachine.github.io/categories/intellij/</loc>
     <lastmod>2014-07-11T08:53:03+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/ios/</loc>
+    <loc>https://antibaconmachine.github.io/tags/ios/</loc>
     <lastmod>2014-10-15T10:07:55+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/categories/ios/</loc>
+    <loc>https://antibaconmachine.github.io/categories/ios/</loc>
     <lastmod>2014-10-15T10:07:55+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/java/</loc>
+    <loc>https://antibaconmachine.github.io/tags/java/</loc>
     <lastmod>2014-05-27T15:57:51+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/categories/java/</loc>
+    <loc>https://antibaconmachine.github.io/categories/java/</loc>
     <lastmod>2014-05-27T15:57:51+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/javascript/</loc>
+    <loc>https://antibaconmachine.github.io/tags/javascript/</loc>
     <lastmod>2014-06-06T15:11:36+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/categories/javascript/</loc>
+    <loc>https://antibaconmachine.github.io/categories/javascript/</loc>
     <lastmod>2014-06-06T15:11:36+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/metalsmith/</loc>
+    <loc>https://antibaconmachine.github.io/tags/metalsmith/</loc>
     <lastmod>2014-06-06T15:11:36+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/categories/metalsmith/</loc>
+    <loc>https://antibaconmachine.github.io/categories/metalsmith/</loc>
     <lastmod>2014-06-06T15:11:36+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://antibaconmachine.github.io/post/</loc>
     <lastmod>2016-04-07T08:16:20+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/post/</loc>
-    <lastmod>2016-04-07T08:16:20+00:00</lastmod>
+    <loc>https://antibaconmachine.github.io/tags/</loc>
+    <lastmod>2014-07-11T08:53:03+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
-    <lastmod>2014-07-11T08:53:03+00:00</lastmod>
+    <loc>https://antibaconmachine.github.io/</loc>
+    <lastmod>2016-04-07T08:16:20+00:00</lastmod>
     <priority>0</priority>
   </url>
   
