@@ -1,9 +1,8 @@
 baseurl = "https://ecstatic-thompson-8f1efe.netlify.app/"
 DefaultContentLanguage = "en"
-#DefaultContentLanguage = "ja"
 title = "This is not an ambulance"
 theme = "beautifulhugo"
-metaDataFormat = "yaml"
+metaDataFormat = "toml"
 #pygmentsUseClasses = true
 #pygmentCodeFences = true
 disqusShortname = "thisisnotanambulance"
