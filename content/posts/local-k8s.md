@@ -1,11 +1,10 @@
 +++
+title = "Local Kubernetes Clusters For Development"
 subtitle = "Or having your cake and eating it"
 date = 2020-06-11T17:28:24Z
 tags = []
 draft = false
 +++
-# Local Kubernetes Clusters For Development
-
 In this post I'm going to talk about running kubernetes locally on a dev machine. Specifically I'm going to cover
 
 * Why you might want to do this
