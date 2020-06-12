@@ -1,64 +1,77 @@
 baseurl = "https://ecstatic-thompson-8f1efe.netlify.app/"
 DefaultContentLanguage = "en"
-#DefaultContentLanguage = "ja"
 title = "This is not an ambulance"
-theme = "beautifulhugo"
-metaDataFormat = "yaml"
+metaDataFormat = "toml"
 #pygmentsUseClasses = true
 #pygmentCodeFences = true
 disqusShortname = "thisisnotanambulance"
 googleAnalytics = "UA-101014744-1"
+theme = "terminal"
+paginate = 5
 
-[Params]
-  subtitle = "It's not you know."
-  logo = "img/avatar-icon.png"
-  favicon = "img/favicon.ico"
-  dateFormat = "January 2, 2006"
-  commit = false
-  rss = true
-  comments = true
-#  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
+[params]
+  # dir name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
 
-#[[Params.bigimg]]
-#  src = "img/triangle.jpg"
-#  desc = "Triangle"
-#[[Params.bigimg]]
-#  src = "img/sphere.jpg"
-#  desc = "Sphere"
-#[[Params.bigimg]]
-#  src = "img/hexagon.jpg"
-#  desc = "Hexagon"
+  # ["orange", "blue", "red", "green", "pink"]
+  themeColor = "green"
 
-[Author]
-  name = "Ollie Edwards"
-  email = "oliver.s.edwards@gmail.com"
-  #facebook = "username"
-  #googleplus = "+username" # or xxxxxxxxxxxxxxxxxxxxx
-  github = "antiBaconMachine"
-  #twitter = "username"
-  #reddit = "username"
-  #linkedin = "username"
-  #xing = "username"
-  #stackoverflow = "users/XXXXXXX/username"
-  #snapchat = "username"
-  #instagram = "username"
-  #youtube = "user/username" # or channel/channelname
-  #soundcloud = "username"
-  #spotify = "username"
-  #bandcamp = "username"
-  #itchio = "username"
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 0
 
-[[menu.main]]
-    name = "Blog"
-    url = ""
-    weight = 1
+  # show selector to switch language
+  showLanguageSelector = false
 
-#[[menu.main]]
-#    name = "About"
-#    url = "page/about/"
-#    weight = 3
+  # set theme to full screen width
+  fullWidthTheme = false
 
-[[menu.main]]
-    name = "Tags"
-    url = "tags"
-    weight = 3
+  # center theme with default width
+  centerTheme = true
+
+  # set a custom favicon (default is a `themeColor` square)
+  # favicon = "favicon.ico"
+
+  # set post to show the last updated
+  # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
+  showLastUpdated = false
+  # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
+  # updatedDatePrefix = "Updated"
+
+  # set all headings to their default size (depending on browser settings)
+  # it's set to `true` by default
+  # oneHeadingSize = false
+
+[params.twitter]
+  # set Twitter handles for Twitter cards
+  # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
+  # do not include @
+  creator = ""
+  site = ""
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    title = "This is not an ambulance"
+    subtitle = "It's not you know"
+    owner = ""
+    keywords = ""
+    copyright = ""
+    menuMore = "Show more"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+    missingContentMessage = "Page not found..."
+    missingBackButtonLabel = "Back to home page"
+
+    [languages.en.params.logo]
+      logoText = "This is not an ambulance"
+      logoHomeLink = "/"
+
+    # [languages.en.menu]
+    #   [[languages.en.menu.main]]
+    #     identifier = "about"
+    #     name = "About"
+    #     url = "/about"
+    #   [[languages.en.menu.main]]
+    #     identifier = "showcase"
+    #     name = "Showcase"
+    #     url = "/showcase"
