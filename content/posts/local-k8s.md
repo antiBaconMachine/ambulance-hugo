@@ -15,20 +15,20 @@ In this post I'm going to talk about running kubernetes locally on a dev machine
 
 Kubernetes is a sledgehammer, your dev environment is a nut. These two things do not work well together. If you can avoid running kubernetes locally on a day to day basis you absolutely should. Feel free to stop reading now.
 
-There are good reasons for doing this however, perhaps you want to debug a specific integration issue between your software and the kubernetes platform. In my case I stared down this route because for the last few months I've been building a system designed from the ground up to run i kubernetes, it involves running many batch jobs in a cluster on a schedule using CronJobs. Whilst the individual jobs can be built and tested somewhat in isolation the only way to know if the whole system is working is to run the thing in kubernetes. This means we need a lightweight install for dev and test environments.
+There are good reasons for doing this however, perhaps you want to debug a specific integration issue between your software and the kubernetes platform. In my case I stared down this route because for the last few months I've been building a system designed from the ground up to run in kubernetes, it involves running many batch jobs in a cluster on a schedule using CronJobs. Whilst the individual jobs can be built and tested somewhat in isolation the only way to know if the whole system is working is to run the thing in kubernetes. This means we need a lightweight install for dev and test environments.
 
 ## What are the options
 
 I investigated a few different local solutions, here are my very brief notes
 
-* Minikube
+* [Minikube](https://github.com/kubernetes/minikube)
   - Been around the longest
   - Requires a VM
-* Docker Desktop
+* [Docker Desktop](https://www.docker.com/products/docker-desktop)
   - Bundled with software you may already have
   - The knarly internals are quite hidden away, which may or may not be a good thing
   - Runs in containers, no VM required
-* (k3s)[https://k3s.io/]/(k3d)[https://k3d.io/]
+* [k3s](https://k3s.io/)/[k3d](https://k3d.io/)
   - k3s is a lightweight kubernetes install provided by Rancher
   - k3d is a cli tool for managing k3s clusters in docker containers
 
@@ -38,7 +38,7 @@ For my purposes it's quite important that my solution is easily scriptable so it
 
 To get every dev a cluster in as painless a way as possible I wrote a simple bootstrap script to ge the cluster up. It's designed to be idempotant so it can be run safely multiple times.
 
-```
+```bash
 #! /usr/bin/env bash
 
 # Suffix the cluster with the k3s version we're using
@@ -89,9 +89,9 @@ kubectl cluster-info
 
 Assuming you already have docker running and k3d installed, this script will stand up a 3 cluster kubernetes instance in docker. Pretty cool. The last line of output is important, users must point their local kubectl at the new cluster.
 
-You might want to invest in a automated way of managing context switching. The way I like to achieve this is with (direnv)[https://direnv.net/], a great tool which allows you to set environment variables on a per directory basis. For our purposes we create a file `.envrc` with the line from the above output:
+You might want to invest in a automated way of managing context switching. The way I like to achieve this is with [direnv](https://direnv.net/), a great tool which allows you to set environment variables on a per directory basis. For our purposes we create a file `.envrc` with the line from the above output:
 
-```
+```bash
 #! /usr/bin/env bash
 export KUBECONFIG="$(k3d get-kubeconfig --name='antibacon-1-17-3')"
 ```
@@ -102,7 +102,7 @@ and now whenever we are in our directory direnv will manage context switching fo
 
 To actually deploy something to the cluster we can use kubectl.
 
-```
+```bash
 ❯kubectl create deployment hello-node --image=k8s.gcr.io/echoserver:1.4
 deployment.apps/hello-node created
 ❯kubectl expose deployment hello-node --type=LoadBalancer --port=8080
@@ -111,13 +111,13 @@ service/hello-node exposed
 
 However to actually get to this service we have to set up a port forward
 
-```
+```bash
 kubectl port-forward svc/hello-node 8080:8080
 ```
 
 Which is not particularly user friendly. What we really want is a public ingress. This is actually pretty straightforward
 
-```
+```bash
 cat <<EOF | kubectl apply -f-
 apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
@@ -136,7 +136,7 @@ EOF
 
 and now we can `curl localhost:7777/hello` to reach the service. 7777 is an arbitrary port we published in the bootstrap script which maps to port 80 on the cluster.
 
-For host based ingress you can either add each host you want to map to your hosts file or you can run a local dns service such as (dnsmasq)[http://www.thekelleys.org.uk/dnsmasq/doc.html] to map an entire subdomain or tld to your localhost.
+For host based ingress you can either add each host you want to map to your hosts file or you can run a local dns service such as [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html) to map an entire subdomain or tld to your localhost.
 
 ### Running your own images
 
@@ -144,7 +144,7 @@ The kubernetes cluster itself needs to be able to fetch any images it needs. Thi
 
 To use it first make sure registry.local maps to 127.0.0.1. You can do this either via your hosts file or with dnsmasq. Now we can push any image as `registry.local:5000/myimage` and both our local docker daemon and the cluster will understand. For example let's just try aliasing the echoserver we've been using as a local image.
 
-```
+```bash
 # first we create a deployment
 ❯kubectl create deployment hello-dev --image=registry.local:5000/echoserver
 deployment.apps/hello-dev created
@@ -169,7 +169,7 @@ hello-dev-6bbb5969cf-lkwn7   1/1     Running   0          9s
 
 ### Getting something else to do all this for you
 
-There are a few tools which attempt to automate a lot of this dev cycle pain. The only one I'm reasonably familiar with is (skaffold)[https://skaffold.dev/]. It certainly helps with the local image build and push loop and it has a nice image rewriting feature so you don't have to rename all your images `registry.local:5000/whatever` in dev.
+There are a few tools which attempt to automate a lot of this dev cycle pain. The only one I'm reasonably familiar with is [skaffold](https://skaffold.dev/). It certainly helps with the local image build and push loop and it has a nice image rewriting feature so you don't have to rename all your images `registry.local:5000/whatever` in dev.
 
 ## Conclusions
 
