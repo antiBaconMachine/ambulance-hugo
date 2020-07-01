@@ -1,8 +1,10 @@
 +++
+author = "Ollie Edwards"
+categories = ["kubernetes", "yaml", "kustomize"]
+date = "2020-07-01T16:40:43+01:00"
+draft = false
 title = "Kustomize, Yaml Anchors and You"
-date = 2020-07-01T16:40:43+01:00
 slug = "kustomize-yaml-anchors"
-categories: ['kubernetes', 'yaml', 'kustomize']
 +++
 
 Kustomize is a tool for composing kubernetes manifests. It helps you to not repeat yourself when configuring many resources which are similar and staging those resources accross environments whciih are similar.
