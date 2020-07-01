@@ -15,7 +15,7 @@ In general this is a good thing. There are other tools whcih can help you with t
 
 I ran into a situation recently where I found it desirable to have both a CronJob and a Job resource which were mighty similar. A CronJob resource in kubernetes might look like
 
-```language=yaml
+```language-yaml
 apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
@@ -42,7 +42,7 @@ spec:
 
 And a job might look something like
 
-```language=yaml
+```language="yaml"
 apiVersion: batch/v1
 kind: Job
 metadata:
@@ -64,9 +64,9 @@ spec:
           restartPolicy: Never
 ```
 
-So, extremely similar, a lot of shared boilerplate. Kustomize generally works on the principle of applying merge patches to existing resources. It doesn't direcly support any kind of resource sharing/loading that would help us to reuse this boilerplate. yaml does have something that will help us though, anchors and aliases. We can use these together with the build in kubernetes resouce List to share the job template between the two resources, like so:
+So, extremely similar, a lot of shared boilerplate. Kustomize generally works on the principle of applying merge patches to existing resources. It doesn't direcly support any kind of resource sharing/loading that would help us to reuse this boilerplate. yaml does have something that will help us though, anchors and aliases. We can use these together with the core kubernetes resouce `List` to share the job template between the two resources, like so:
 
-```language=yaml
+```language-yml
 apiVersion: v1
 kind: List
 items:
@@ -105,7 +105,7 @@ What if you only want to use one of these resources at a time?
 
 For this the best solution I've found is to specify an overlay kustomization which deletes the resource you are not interested in. You can achieve this using either supported patch format, I'll use a strategic merge patch for this example. The overlay kustomization.yaml looks like this:
 
-```language=yaml
+```language=yml
 bases:
   - ../base
 patchesStrategicMerge:
@@ -114,7 +114,7 @@ patchesStrategicMerge:
 
 The deletion patch looks like this
 
-```language=yaml
+```language="yml"
 apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
