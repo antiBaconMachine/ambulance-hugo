@@ -1,7 +1,7 @@
 +++
 title = "Kustomize, Yaml Anchors and You"
 date = 2020-07-01T16:40:43+01:00
-slug = kustomize-yaml-anchors
+slug = "kustomize-yaml-anchors"
 categories: ['kubernetes', 'yaml', 'kustomize']
 +++
 
