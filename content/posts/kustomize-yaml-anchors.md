@@ -114,7 +114,7 @@ patchesStrategicMerge:
 
 The deletion patch looks like this
 
-```
+```language=yaml
 apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
