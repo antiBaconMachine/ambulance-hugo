@@ -6,7 +6,7 @@ tags = ['kubernetes', 'shell', 'testing']
 draft = false
 +++
 
-I found myself needing to write an integration test for a complex workflow invovling dynamic payloads being delivered to `kubectl`. The idea is that a user can call a rest endpoint, which will kick off a whole Rube Goldberg machine, the end result is that a kubernetes manifest is generated and applied. There are many moving parts and a solid tsting stratergy is needed. In particular it's essential that we have full end to end testing that shows a user can reliably submit their payload and a real job is spawned on a cluster as a result.
+I found myself needing to write an integration test for a complex workflow invovling dynamic payloads being delivered to `kubectl`. The idea is that a user can call a rest endpoint, which will kick off a whole Rube Goldberg machine, the end result is that a kubernetes manifest is generated and applied. There are many moving parts and a solid testing stratergy is needed. In particular it's essential that we have full end to end testing that shows a user can reliably submit their payload and a real job is spawned on a cluster as a result.
 
 End to end tests are the closest automated tests to an actual user experience so arguably the most reliable in terms of guaging the actual experience of a user. They are also typically the slowest tests both in terms of actual run time and the lag time between submitting code and seeing a test result. I wouldn't dream of undertaking this project without the ATs watching my back but I also crave the fast feedback loop of an integration test that will run fast right in my CI pipeline. The requirements for my test suite are:
 
