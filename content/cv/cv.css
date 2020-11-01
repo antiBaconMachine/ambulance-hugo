@@ -1,0 +1,30 @@
+.container-fluid {
+    margin: 0 10%;
+}
+
+h1, h2, .titleBlock {
+    background-color: darkslategray;
+    color: whitesmoke;
+    padding: 3px;
+}
+
+.contact {
+    text-align: center;
+}
+
+.location {
+    text-align: right;
+}
+
+/* ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+}
+
+li {
+    flex: 1 0 50%;
+    padding: 5px 10px 10px 5px;
+} */
+
+
