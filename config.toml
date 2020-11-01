@@ -66,11 +66,11 @@ paginate = 5
       logoText = "This is not an ambulance"
       logoHomeLink = "/"
 
-    # [languages.en.menu]
-    #   [[languages.en.menu.main]]
-    #     identifier = "about"
-    #     name = "About"
-    #     url = "/about"
+  #  [languages.en.menu]
+   #  [[languages.en.menu.main]]
+    #   identifier = "cv"
+     #  name = "CV"
+      # url = "/cv"
     #   [[languages.en.menu.main]]
     #     identifier = "showcase"
     #     name = "Showcase"
